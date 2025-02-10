@@ -12,15 +12,16 @@ export function AnimatedBackground() {
             key={i}
             className="absolute h-96 w-96 rounded-full bg-primary/5"
             initial={{
-              x: Math.random() * 100 - 50,
-              y: Math.random() * 100 - 50,
+              x: 0,
+              y: 0,
               scale: 0,
+              opacity: 0,
             }}
             animate={{
-              x: Math.random() * 200 - 100,
-              y: Math.random() * 200 - 100,
-              scale: [1, 1.2, 1],
-              opacity: [0.3, 0.5, 0.3],
+              x: [0, Math.random() * 200 - 100],
+              y: [0, Math.random() * 200 - 100],
+              scale: [0, 1, 1.2, 1],
+              opacity: [0, 0.3, 0.5, 0.3],
             }}
             transition={{
               duration: 8,
