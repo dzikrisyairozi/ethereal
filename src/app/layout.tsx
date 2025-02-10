@@ -2,15 +2,16 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
+import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/providers/theme-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Next.js + shadcn/ui Starter Kit',
+  title: 'Ethereal - Web3 Marketplace',
   description:
-    'A beautiful, modern starter template with Next.js 15, Tailwind CSS, and shadcn/ui components.',
+    'A modern Web3 marketplace where art meets decentralized finance',
   manifest: '/favicon/manifest.json',
   /**
    * generate favicon from https://www.favicon-generator.org/ and replace the favicon files in the public folder
@@ -165,6 +166,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider defaultTheme="light" storageKey="app-theme">
+          <Header />
           {children}
           <Toaster />
         </ThemeProvider>
