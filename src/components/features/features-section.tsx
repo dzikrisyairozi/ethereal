@@ -28,7 +28,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="relative overflow-hidden py-24 sm:py-32">
+    <section id="features" className="relative overflow-hidden py-24 sm:py-32">
       <div className="container px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
