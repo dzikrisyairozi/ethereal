@@ -1,5 +1,6 @@
 'use client';
 
+import { CTASection } from '@/components/cta/cta-section';
 import { FeaturesSection } from '@/components/features/features-section';
 import { HeroSection } from '@/components/hero/hero-section';
 
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <HeroSection />
       <FeaturesSection />
+      <CTASection />
     </main>
   );
 }
