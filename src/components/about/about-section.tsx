@@ -33,6 +33,7 @@ export function AboutSection() {
 
   return (
     <section
+      id="about"
       ref={containerRef}
       className="relative overflow-hidden bg-background py-24 sm:py-32"
     >

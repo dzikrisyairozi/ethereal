@@ -11,9 +11,8 @@ import { ThemeToggle } from '../theme-toggle';
 import { WalletConnectButton } from '../wallet/connect-button';
 
 const navItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'Features', href: '#features' },
   { name: 'About', href: '#about' },
+  { name: 'Features', href: '#features' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -44,14 +43,14 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="flex items-center gap-2"
+          className="flex w-1/3 items-center gap-2"
         >
           <Codesandbox className="h-8 w-8" />
           <span className="text-xl font-bold">Ethereal</span>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden w-1/3 items-center justify-center gap-8 md:flex">
           {navItems.map((item) => (
             <motion.a
               key={item.name}
@@ -65,7 +64,7 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden w-1/3 items-center justify-end gap-2 md:flex">
           <ThemeToggle />
           <WalletConnectButton />
         </div>
