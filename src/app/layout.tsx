@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
+import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/providers/theme-provider';
@@ -168,6 +169,7 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="light" storageKey="app-theme">
           <Header />
           {children}
+          <Footer />
           <Toaster />
         </ThemeProvider>
       </body>
