@@ -14,7 +14,7 @@ export function HeroStats() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.6 }}
+      transition={{ delay: 3.5 }}
       className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4"
     >
       {stats.map((stat) => (
