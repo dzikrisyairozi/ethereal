@@ -1,155 +1,90 @@
-# Next.js + shadcn/ui Starter Kit
+# Ethereal - Web3 NFT Marketplace
 
-A modern, feature-rich starter template built with Next.js 15, Tailwind CSS, TypeScript, and shadcn/ui components.
+A modern, production-ready Web3 NFT marketplace built with Next.js 15, Tailwind CSS, shadcn/ui, and TypeScript.
 
-## Features
+![Hero Section Screenshot]
 
-- 🚀 Next.js 15 with App Router
-- 💅 shadcn/ui Components (40+ pre-built components)
-- 🎨 Tailwind CSS for styling
-- 📝 TypeScript for type safety
-- 🌙 Dark mode support
-- 🧩 Component showcase page
-- 🔍 ESLint and Prettier for code quality
-- 🪝 Husky for Git hooks
-- 📜 Commitlint for consistent commit messages
-- 🔄 GitHub Actions CI/CD workflow
-- ✅ Automated branch checks and tests
+## 🚀 Key Features
+
+- ⚡️ Next.js 15 with App Router & Server Components
+- 💅 Polished UI with shadcn/ui & Tailwind CSS
+- 🌙 Dark/Light mode with smooth transitions
+- 🎭 Framer Motion animations
+- 🔗 Web3 wallet integration
 - 📱 Fully responsive design
-- 🎯 Path aliases (@/ based imports)
-- 📦 Organized project structure
+- 🎨 Beautiful animated backgrounds
+- 🔍 TypeScript for type safety
 
-## Prerequisites
+## 🛠 Quick Start
 
-- Node.js 18+
-- pnpm (recommended) or npm
+1. Clone the repository:
 
-## Getting Started
+```bash
+git clone https://github.com/yourusername/ethereal.git
+```
 
-You can start using this template in two ways:
+2. Install dependencies:
 
-1. Use as template via GitHub web interface:
+```bash
+pnpm install
+```
 
-   - Visit https://github.com/dzikrisyairozi/next-shadcn-ui-starter
-   - Click the "Use this template" button
-   - Choose "Create a new repository"
-   - Follow the prompts to create your repository
+3. Start development server:
 
-2. Create from template using CLI:
+```bash
+pnpm dev
+```
 
-   ```bash
-   npx create-next-app@latest your-app-name -e https://github.com/dzikrisyairozi/next-shadcn-ui-starter
-   ```
+4. Open [http://localhost:3000](http://localhost:3000)
 
-   or clone the repository:
+## 🎨 Design Decisions
 
-   ```bash
-   git clone https://github.com/dzikrisyairozi/next-shadcn-ui-starter.git
-   ```
+- **Animation Philosophy**: Smooth, staged animations for better UX
+- **Component Architecture**: Modular, reusable components with shadcn/ui
+- **Performance**: Server Components where possible, client components when needed
+- **Theme**: Dynamic color system with smooth transitions
+- **Layout**: Responsive grid system with mobile-first approach
 
-3. Install dependencies:
+## 📁 Project Structure
 
-   ```bash
-   pnpm install
-   ```
-
-4. Run the development server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Project Structure
-
-````
-next-shadcn-ui-starter/
+```
+ethereal/
 ├── src/
-│ ├── app/ # App router pages
-│ ├── components/ # React components
-│ │ └── ui/ # shadcn/ui components
-│ ├── hooks/ # Custom React hooks
-│ └── lib/ # Utility functions
-├── public/ # Static files
-├── styles/ # Global styles
-└── ```config files
-````
+│   ├── app/          # Next.js app router pages
+│   ├── components/   # React components
+│   │   ├── [sections]# Section components
+│   │   ├── ui/       # shadcn/ui components
+│   │   └── wallet/   # Web3 wallet componentss
+│   ├── providers/    # Context providers
+│   └── lib/          # Utility functions
+```
 
-## Available Scripts
+## 🧰 Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **Web3**: wagmi & viem
+- **Type Safety**: TypeScript
+
+## 📜 Available Scripts
 
 ```bash
 pnpm dev        # Start development server
 pnpm build      # Build for production
 pnpm start      # Start production server
 pnpm lint       # Run ESLint
-pnpm lint:fix   # Fix ESLint errors
-pnpm format     # Format code with Prettier
 ```
 
-## Components Showcase
-
-Visit `/sandbox` route to explore all available components. Components are organized into categories:
-
-- Form Inputs
-- Layout
-- Navigation
-- Feedback
-- Data Display
-- Overlay
-
-## Customization
-
-### Styling
-
-1. Modify `globals.css` for global styles
-2. Update `tailwind.config.ts` for Tailwind configuration
-3. Edit component-specific styles in their respective files
-
-### Theme
-
-The default theme can be customized in `src/app/globals.css`:
-
-- Light/dark mode colors
-- Border radius
-- Animations
-- Typography
-
-### Adding New Components
-
-1. Use shadcn/ui CLI to add new components:
-
-```bash
-pnpm dlx shadcn-ui@latest add button
-```
-
-2. Components will be added to `src/components/ui/`
-
-## Best Practices
-
-- Use TypeScript for type safety
-- Follow the established project structure
-- Utilize path aliases for imports
-- Keep components modular and reusable
-- Use Prettier and ESLint for code consistency
-
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## License
+## 📄 License
 
-MIT License - feel free to use this starter kit for any project.
-
-## Acknowledgments
-
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful components
-- [Next.js](https://nextjs.org/) team for the amazing framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-
-## Support
-
-For support, please open an issue in the GitHub repository.
+MIT License - see the [LICENSE](LICENSE) file for details.
