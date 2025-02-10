@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { WalletConnectButton } from '@/components/wallet/connect-button';
 
 interface MobileNavProps {
   items: { name: string; href: string }[];
@@ -41,7 +42,7 @@ export default function MobileNav({ items }: MobileNavProps) {
               {item.name}
             </motion.a>
           ))}
-          <Button className="mt-4">Connect Wallet</Button>
+          <WalletConnectButton />
         </nav>
       </SheetContent>
     </Sheet>

@@ -6,6 +6,7 @@ import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/providers/theme-provider';
+import { Web3Provider } from '@/providers/web3-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -165,12 +166,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <body
+        className={`${inter.className} min-h-screen bg-background text-foreground antialiased`}
+      >
         <ThemeProvider defaultTheme="light" storageKey="app-theme">
-          <Header />
-          {children}
-          <Footer />
-          <Toaster />
+          <Web3Provider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+            <Toaster />
+          </Web3Provider>
         </ThemeProvider>
       </body>
     </html>

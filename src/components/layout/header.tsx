@@ -5,10 +5,10 @@ import { Codesandbox } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 import MobileNav from '@/components/layout/mobile-nav';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 import { ThemeToggle } from '../theme-toggle';
+import { WalletConnectButton } from '../wallet/connect-button';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -67,7 +67,7 @@ export default function Header() {
 
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
-          <Button variant="outline">Connect Wallet</Button>
+          <WalletConnectButton />
         </div>
 
         {/* Mobile Navigation */}
