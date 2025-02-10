@@ -167,7 +167,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} min-h-screen bg-background text-foreground antialiased`}
       >
-        <ThemeProvider defaultTheme="light" storageKey="app-theme">
+        <ThemeProvider defaultTheme="dark" storageKey="app-theme">
           <Web3Provider>
             <div className="flex min-h-screen flex-col">
               {/* <Header /> */}
