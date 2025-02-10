@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import Footer from '@/components/layout/footer';
-import Header from '@/components/layout/header';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/providers/theme-provider';
 import { Web3Provider } from '@/providers/web3-provider';
@@ -172,9 +170,9 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="light" storageKey="app-theme">
           <Web3Provider>
             <div className="flex min-h-screen flex-col">
-              <Header />
+              {/* <Header /> */}
               <main className="flex-1">{children}</main>
-              <Footer />
+              {/* <Footer /> */}
             </div>
             <Toaster />
           </Web3Provider>
